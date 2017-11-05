@@ -13,8 +13,18 @@ This repository is a basic Screeps population to be improve.
 
 ## Installation
 
-If you already own Screeps, you juste have to place the files in the `PATH_TO_SCREEPS/scripts/screeps.com/default` directory.
+This repository is a fork of the [Screeps TypeScript Starter](https://github.com/screepers/screeps-typescript-starter).
 
+```javascript
+> To install dependencies, run
+yarn install
+
+> To run the project
+yarn start
+
+> To deploy
+yarn deploy
+```
 ## Notice
 
 To help me understand to basic concepts of the game and start to play, I watched the videos of @thPionGaming Youtube channel
