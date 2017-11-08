@@ -34,7 +34,6 @@ export function run(room: Room): void {
 
     if (creepCount === 0) {
         _.each(spawns, (spawn: Spawn) => {
-
             // start emergency sequence
             spawn.spawnCreep([WORK, CARRY, MOVE, MOVE], `emergency_${Game.time.toString()}`, {
                 memory: {
@@ -123,7 +122,7 @@ export function run(room: Room): void {
 
 function _spawnCreep(spawn: Spawn, role: string): void {
     const uuid: number = Memory.uuid;
-    const name = `${spawn.room.name}-${role}${uuid}`;
+    const name = `${spawn.room.name}-${role}${Game.time.toString()}`;
     const testIfCanSpawn = spawn.createCustomCreep(spawn.room, `${name}`, role, {dryRun: true});
 
     if (testIfCanSpawn === OK) {
